@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Website Header</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-50">
+        <header class="bg-white shadow-sm">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16">
+                    <!-- Logo -->
+                    <a href="index.html"><div class="flex items-center">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-8 h-8 flex items-center justify-center">
+                                <img src="images/logo.png" alt="Logo" class="w-8 h-8 object-contain" />
+                            </div>
+                            <span class="text-blue-600 font-bold text-lg transition-colors duration-300 hover:text-orange-500">
+                                RHINO ON THE BEACH
+                            </span>
+                        </div>
+
+                    </div></a>
+
+                    <!-- Navigation -->
+                    <nav class="hidden md:flex items-center space-x-8">
+                        <a href="index.html"
+                           class="font-medium transition-colors duration-300 text-orange-500 border-b-2 border-orange-500">
+                           Home
+                        </a>
+                        <a href="services.html"
+                           class="text-gray-600 hover:text-orange-500 transition-colors duration-300">
+                           Services
+                        </a>
+                        <a href="destinations.html"
+                           class="text-gray-600 hover:text-orange-500 transition-colors duration-300">
+                           Destinations
+                        </a>
+                        <a href="about.html"
+                           class="text-gray-600 hover:text-orange-500 transition-colors duration-300">
+                           About
+                        </a>
+                        <a href="gallery.html"
+                           class="text-gray-600 hover:text-orange-500 transition-colors duration-300">
+                           Gallery
+                        </a>
+                        <a href="contact.html"
+                           class="text-gray-600 hover:text-orange-500 transition-colors duration-300">
+                           Contact
+                        </a>
+                    </nav>
+
+
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden">
+                        <button
+                            class="text-gray-600 hover:text-gray-900 focus:outline-none"
+                        >
+                            <svg
+                                class="h-6 w-6"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile menu -->
+            <div class="md:hidden">
+                <div
+                    class="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-gray-200"
+                >
+                    <a
+                        href="index.html"
+                        class="text-orange-500 block px-3 py-2 font-medium"
+                        >Home</a
+                    >
+                    <a
+                        href="services.html"
+                        class="text-gray-600 hover:text-gray-900 block px-3 py-2"
+                        >Services</a
+                    >
+                    <a
+                        href="destinations.html"
+                        class="text-gray-600 hover:text-gray-900 block px-3 py-2"
+                        >Destinations</a
+                    >
+                    <a
+                        href="about.html"
+                        class="text-gray-600 hover:text-gray-900 block px-3 py-2"
+                        >About</a
+                    >
+                    <a
+                        href="gallery.html"
+                        class="text-gray-600 hover:text-gray-900 block px-3 py-2"
+                        >Gallery</a
+                    >
+                    <a
+                        href="contact.html"
+                        class="text-gray-600 hover:text-gray-900 block px-3 py-2"
+                        >Contact</a
+                    >
+                </div>
+            </div>
+        </header>
+
+
+                <!-- Header -->
+
+                <!-- Hero Section -->
+                <section
+                    class="hero-bg min-h-screen flex items-center justify-center relative"
+                >
+                    <div class="text-center px-4 sm:px-6 lg:px-8 max-w-4xl">
+                        <!-- Main Heading -->
+                        <h1
+                            class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight"
+                        >
+                            Where the Wild Meets the
+                            <span class="text-orange-500">Waves</span>
+                        </h1>
+
+                        <!-- Subtitle -->
+                        <p
+                            class="text-lg sm:text-xl text-gray-200 mb-12 max-w-3xl mx-auto leading-relaxed"
+                        >
+                            Discover the perfect harmony of wild African
+                            adventures and serene coastal escapes. Create
+                            unforgettable memories where nature's greatest
+                            treasures meet.
+                        </p>
+
+                        <!-- CTA Buttons -->
+                        <div
+                            class="flex flex-col sm:flex-row gap-4 justify-center items-center"
+                        >
+                            <button
+                                class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center gap-2"
+                            >
+                                Start Your Adventure
+                                <svg
+                                    class="w-5 h-5"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M9 5l7 7-7 7"
+                                    />
+                                </svg>
+                            </button>
+                            <button
+                                class="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 border border-white/30 hover:border-white/50"
+                            >
+                                Watch Video
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Scroll indicator -->
+                    <div
+                        class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
+                    >
+                        <div
+                            class="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center"
+                        >
+                            <div
+                                class="w-1 h-3 bg-white/70 rounded-full mt-2 animate-pulse"
+                            ></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- WhatsApp Button -->
+                <div class="fixed bottom-6 right-6 z-50">
+                    <a
+                        href="https://wa.me/1234567890"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110"
+                    >
+                        <svg
+                            class="w-7 h-7 text-white"
+                            fill="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.051 3.488"
+                            />
+                        </svg>
+                    </a>
+                </div>
+                <!-- Additional Demo Content -->
+                <section class="py-10 bg-gray-50">
+                    <div class="max-w-6xl mx-auto px-2 text-center">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Experience the Magic</h3>
+                        <p class="text-gray-600 max-w-2xl mx-auto">
+                            Join thousands of adventurers who have discovered the magic of Africa through our expertly crafted journeys.
+                        </p>
+                    </div>
+                </section>
+
+
+                <!-- Gateway Section -->
+    <section class="py-16 lg:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+                <!-- Left Content -->
+                <div class="space-y-8">
+                    <div>
+                        <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+                            Your Gateway to
+                            <span class="text-orange-500">African Wonders</span>
+                        </h2>
+                    </div>
+
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        At Rhino on the Beach, we don't just plan trips – we craft extraordinary journeys that blend the raw excitement of African safaris with the tranquil beauty of pristine coastlines.
+                    </p>
+
+                    <!-- Features List -->
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-orange-500 rounded-full"></div>
+                            <span class="text-gray-700 font-medium">15+ Years of African Adventure Expertise</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-orange-500 rounded-full"></div>
+                            <span class="text-gray-700 font-medium">Sustainable Tourism Champions</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-orange-500 rounded-full"></div>
+                            <span class="text-gray-700 font-medium">Local Communities Partner</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content - Image with Stats -->
+                <div class="relative">
+                    <!-- Main Image -->
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                        <img
+                            src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+                            alt="Mountain landscape in Africa"
+                            class="w-full h-80 lg:h-96 object-cover"
+                        />
+
+                        <!-- Gradient overlay for better text visibility -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+
+                    <!-- Stats Cards -->
+                    <!-- Happy Travelers Card -->
+                    <div class="absolute top-4 right-4 bg-white rounded-lg shadow-lg p-4 min-w-[120px]">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-orange-500">1000+</div>
+                            <div class="text-sm text-gray-600 font-medium">Happy Travelers</div>
+                        </div>
+                    </div>
+
+                    <!-- Destinations Card -->
+                    <div class="absolute bottom-6 left-4 bg-white rounded-lg shadow-lg p-4 min-w-[120px]">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-blue-600">5+</div>
+                            <div class="text-sm text-gray-600 font-medium">Destinations</div>
+                        </div>
+                    </div>
+
+                    <!-- Decorative Elements -->
+                    <div class="absolute -top-4 -left-4 w-20 h-20 bg-orange-100 rounded-full opacity-60"></div>
+                    <div class="absolute -bottom-6 -right-6 w-16 h-16 bg-blue-100 rounded-full opacity-60"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Demo content -->
+    <section class="max-w-6xl mx-auto px-4 py-16 text-center">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Why Choose Our Safari Adventures?</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+            Experience the difference with our commitment to excellence, sustainability, and authentic African experiences.
+        </p>
+    </section>
+    <!-- Feature Cards Section -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <!-- Card 1: Passionate Expertise -->
+            <div class="fade-in-up card-1 opacity-0 bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 group">
+                <!-- Icon -->
+                <div class="icon-bounce inline-flex items-center justify-center w-16 h-16 bg-orange-500 rounded-2xl mb-6 group-hover:bg-orange-600 transition-colors duration-300">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                    </svg>
+                </div>
+
+                <!-- Title -->
+                <h3 class="text-xl font-bold text-gray-900 mb-4 group-hover:text-orange-500 transition-colors duration-300">
+                    Passionate Expertise
+                </h3>
+
+                <!-- Description -->
+                <p class="text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
+                    Deep local knowledge and genuine love for African culture and wildlife
+                </p>
+
+                <!-- Animated border on hover -->
+                <div class="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-orange-200 transition-all duration-300"></div>
+            </div>
+
+            <!-- Card 2: Safe & Sustainable -->
+            <div class="fade-in-up card-2 opacity-0 bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 group">
+                <!-- Icon -->
+                <div class="icon-bounce inline-flex items-center justify-center w-16 h-16 bg-orange-500 rounded-2xl mb-6 group-hover:bg-orange-600 transition-colors duration-300">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                    </svg>
+                </div>
+
+                <!-- Title -->
+                <h3 class="text-xl font-bold text-gray-900 mb-4 group-hover:text-orange-500 transition-colors duration-300">
+                    Safe & Sustainable
+                </h3>
+
+                <!-- Description -->
+                <p class="text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
+                    Committed to responsible tourism that protects nature and communities
+                </p>
+
+                <!-- Animated border on hover -->
+                <div class="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-orange-200 transition-all duration-300"></div>
+            </div>
+
+            <!-- Card 3: Authentic Experiences -->
+            <div class="fade-in-up card-3 opacity-0 bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 group">
+                <!-- Icon -->
+                <div class="icon-bounce inline-flex items-center justify-center w-16 h-16 bg-orange-500 rounded-2xl mb-6 group-hover:bg-orange-600 transition-colors duration-300">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                </div>
+
+                <!-- Title -->
+                <h3 class="text-xl font-bold text-gray-900 mb-4 group-hover:text-orange-500 transition-colors duration-300">
+                    Authentic Experiences
+                </h3>
+
+                <!-- Description -->
+                <p class="text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
+                    Unique adventures that connect you with the real Africa
+                </p>
+
+                <!-- Animated border on hover -->
+                <div class="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-orange-200 transition-all duration-300"></div>
+            </div>
+
+            <!-- Card 4: Excellence Guaranteed -->
+            <div class="fade-in-up card-4 opacity-0 bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 group">
+                <!-- Icon -->
+                <div class="icon-bounce inline-flex items-center justify-center w-16 h-16 bg-orange-500 rounded-2xl mb-6 group-hover:bg-orange-600 transition-colors duration-300">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                    </svg>
+                </div>
+
+                <!-- Title -->
+                <h3 class="text-xl font-bold text-gray-900 mb-4 group-hover:text-orange-500 transition-colors duration-300">
+                    Excellence Guaranteed
+                </h3>
+
+                <!-- Description -->
+                <p class="text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
+                    Award-winning service and unforgettable memories guaranteed
+                </p>
+
+                <!-- Animated border on hover -->
+                <div class="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-orange-200 transition-all duration-300"></div>
+            </div>
+        </div>
+        <br>
+        <br>
+    </section>
+
+    <!-- Popular Destinations Section -->
+    <section class="py-16 lg:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Header -->
+            <div class="text-center mb-16 fade-in-up opacity-0">
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                    Popular Destinations
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    From pristine beaches to wild safaris, discover the most breathtaking destinations that
+                    showcase the best of African adventure and coastal beauty.
+                </p>
+            </div>
+
+            <!-- Destinations Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+
+                <!-- Zanzibar Card -->
+                <div class="zoom-in opacity-0 card-1 group cursor-pointer">
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                        <!-- Image Container -->
+                        <div class="relative h-64 overflow-hidden">
+                            <div class="image-overlay absolute inset-0 z-10"></div>
+                            <img
+                                src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Zanzibar beaches"
+                                class="w-full h-full object-cover hover-zoom group-hover:brightness-110 transition-all duration-500"
+                            />
+                            <!-- Category Badge -->
+                            <div class="absolute top-4 left-4 z-20">
+                                <span class="bg-white/90 backdrop-blur-sm text-gray-800 px-3 py-1 rounded-full text-sm font-medium">
+                                    Beach & Culture
+                                </span>
+                            </div>
+                            <!-- Location Icon -->
+                            <div class="absolute bottom-4 right-4 z-20">
+                                <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Content -->
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-orange-500 transition-colors duration-300">
+                                Zanzibar
+                            </h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Paradise islands with pristine beaches and rich culture
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mount Kilimanjaro Card -->
+                <div class="zoom-in opacity-0 card-2 group cursor-pointer">
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                        <!-- Image Container -->
+                        <div class="relative h-64 overflow-hidden">
+                            <div class="image-overlay absolute inset-0 z-10"></div>
+                            <img
+                                src="https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Mount Kilimanjaro"
+                                class="w-full h-full object-cover hover-zoom group-hover:brightness-110 transition-all duration-500"
+                            />
+                            <!-- Category Badge -->
+                            <div class="absolute top-4 left-4 z-20">
+                                <span class="bg-white/90 backdrop-blur-sm text-gray-800 px-3 py-1 rounded-full text-sm font-medium">
+                                    Adventure
+                                </span>
+                            </div>
+                            <!-- Location Icon -->
+                            <div class="absolute bottom-4 right-4 z-20">
+                                <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Content -->
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-orange-500 transition-colors duration-300">
+                                Mount Kilimanjaro
+                            </h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Africa's highest peak and ultimate adventure challenge
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Serengeti National Park Card -->
+                <div class="zoom-in opacity-0 card-3 group cursor-pointer">
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                        <!-- Image Container -->
+                        <div class="relative h-64 overflow-hidden">
+                            <div class="image-overlay absolute inset-0 z-10"></div>
+                            <img
+                                src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Serengeti safari"
+                                class="w-full h-full object-cover hover-zoom group-hover:brightness-110 transition-all duration-500"
+                            />
+                            <!-- Category Badge -->
+                            <div class="absolute top-4 left-4 z-20">
+                                <span class="bg-white/90 backdrop-blur-sm text-gray-800 px-3 py-1 rounded-full text-sm font-medium">
+                                    Safari
+                                </span>
+                            </div>
+                            <!-- Location Icon -->
+                            <div class="absolute bottom-4 right-4 z-20">
+                                <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Content -->
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-orange-500 transition-colors duration-300">
+                                Serengeti National Park
+                            </h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Witness the Great Migration and incredible wildlife
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ngorongoro Crater Card -->
+                <div class="zoom-in opacity-0 card-4 group cursor-pointer">
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                        <!-- Image Container -->
+                        <div class="relative h-64 overflow-hidden">
+                            <div class="image-overlay absolute inset-0 z-10"></div>
+                            <img
+                                src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Ngorongoro Crater"
+                                class="w-full h-full object-cover hover-zoom group-hover:brightness-110 transition-all duration-500"
+                            />
+                            <!-- Category Badge -->
+                            <div class="absolute top-4 left-4 z-20">
+                                <span class="bg-white/90 backdrop-blur-sm text-gray-800 px-3 py-1 rounded-full text-sm font-medium">
+                                    Wildlife
+                                </span>
+                            </div>
+                            <!-- Location Icon -->
+                            <div class="absolute bottom-4 right-4 z-20">
+                                <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Content -->
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-orange-500 transition-colors duration-300">
+                                Ngorongoro Crater
+                            </h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                UNESCO World Heritage site with diverse wildlife
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Button -->
+            <a href="destinations.html">
+                <div class="text-center slide-in-left opacity-0" style="animation-delay: 0.6s;">
+                <button class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg inline-flex items-center gap-2 group">
+                    Explore All Destinations
+                    <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </button>
+            </div>
+        </a>
+        </div>
+    </section>
+
+    <!-- Demo content -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Ready for Your Next Adventure?</h3>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                Each destination offers unique experiences that will create memories to last a lifetime.
+            </p>
+        </div>
+    </section>
+
+
+
+                <!-- Footer -->
+                <footer class="bg-slate-800 text-white">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+
+                            <!-- Logo and Description -->
+                            <div class="md:col-span-1">
+                                <a href="index.html"><div class="flex items-center">
+                                    <div class="flex items-center space-x-2">
+                                        <div class="w-8 h-8 flex items-center justify-center">
+                                            <img src="images/logo.png" alt="Logo" class="w-8 h-8 object-contain" />
+                                        </div>
+                                        <span class="text-blue-100 font-bold text-lg transition-colors duration-300 hover:text-orange-500">
+                                            RHINO ON THE BEACH
+                                        </span>
+                                    </div>
+
+                                </div></a>
+                                <p class="text-gray-300 leading-relaxed">
+                                    Creating unforgettable travel experiences that blend the thrill of African adventure with the serenity of coastal escapes.
+                                </p>
+                            </div>
+
+                            <!-- Quick Links -->
+                            <div>
+                                <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+                                <ul class="space-y-4">
+                                    <li>
+                                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="services.html" class="text-gray-400 hover:text-white transition-colors duration-200">
+                                            Services
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                                            Destinations
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                                            About
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Contact Information -->
+                            <div>
+                                <h3 class="text-lg font-semibold mb-6">Contact</h3>
+                                <div class="space-y-4">
+                                    <!-- Phone -->
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-5 h-5 flex items-center justify-center">
+                                            <svg class="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
+                                            </svg>
+                                        </div>
+                                        <span class="text-gray-300">+255 615 090 493</span>
+                                    </div>
+
+                                    <!-- Email -->
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-5 h-5 flex items-center justify-center">
+                                            <svg class="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
+                                            </svg>
+                                        </div>
+                                        <span class="text-gray-300">info@rhinoonthebeach.com</span>
+                                    </div>
+
+                                    <!-- Location -->
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-5 h-5 flex items-center justify-center">
+                                            <svg class="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>
+                                            </svg>
+                                        </div>
+                                        <span class="text-gray-300">Tanzania, East Africa</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bottom section with copyright -->
+                        <div class="border-t border-slate-700 mt-12 pt-8">
+                            <div class="text-center text-gray-400 text-sm">
+                                © 2024 Rhino on the Beach. All rights reserved. | Connecting travelers with African wonders.
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </body>
+        </html>
+    </body>
+</html>
