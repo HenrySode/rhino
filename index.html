@@ -11,49 +11,27 @@
         <header class="bg-white shadow-sm">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div class="flex justify-between items-center h-16">
-
                 <!-- Left: Logo -->
                 <a href="index.html">
                   <div class="flex items-center space-x-2">
-                    <div class="w-8 h-8 flex items-center justify-center">
-                      <img src="images/logo.png" alt="Logo" class="w-8 h-8 object-contain" />
-                    </div>
+                    <img src="images/logo.png" alt="Logo" class="w-8 h-8 object-contain" />
                     <span class="text-blue-600 font-bold text-lg hover:text-orange-500 transition-colors duration-300">
                       RHINO ON THE BEACH
                     </span>
                   </div>
                 </a>
 
-                <!-- Center: Navigation -->
+                <!-- Center: Navigation (Desktop only) -->
                 <nav class="hidden md:flex items-center space-x-4">
-                  <a href="index.html"
-                     class="font-bold text-orange-500 bg-orange-100/60 px-3 py-2 rounded-md transition-colors duration-300">
-                    Home
-                  </a>
-                  <a href="services.html"
-                     class="text-gray-600 hover:text-orange-500 hover:bg-orange-50 px-3 py-2 rounded-md transition-colors duration-300">
-                    Services
-                  </a>
-                  <a href="destinations.html"
-                     class="text-gray-600 hover:text-orange-500 hover:bg-orange-50 px-3 py-2 rounded-md transition-colors duration-300">
-                    Destinations
-                  </a>
-                  <a href="about.html"
-                     class="text-gray-600 hover:text-orange-500 hover:bg-orange-50 px-3 py-2 rounded-md transition-colors duration-300">
-                    About
-                  </a>
-                  <a href="gallery.html"
-                     class="text-gray-600 hover:text-orange-500 hover:bg-orange-50 px-3 py-2 rounded-md transition-colors duration-300">
-                    Gallery
-                  </a>
-                  <a href="contact.html"
-                     class="text-gray-600 hover:text-orange-500 hover:bg-orange-50 px-3 py-2 rounded-md transition-colors duration-300">
-                    Contact
-                  </a>
+                    <a href="index.html" class="font-bold text-orange-500 bg-orange-100/60 px-3 py-2 rounded-md transition">Home</a>
+                    <a href="services.html" class="text-gray-600 hover:text-orange-500 hover:bg-orange-50 px-3 py-2 rounded-md transition">Services</a>
+                    <a href="destinations.html" class="text-gray-600 hover:text-orange-500 hover:bg-orange-50 px-3 py-2 rounded-md transition">Destinations</a>
+                    <a href="about.html" class="text-gray-600 hover:text-orange-500 hover:bg-orange-50 px-3 py-2 rounded-md transition">About</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-orange-500 hover:bg-orange-50 px-3 py-2 rounded-md transition">Contact</a>
                 </nav>
 
-                <!-- Right: Social -->
-                <div class="flex items-center space-x-4 text-gray-600">
+                <!-- Right: Social (Desktop only) -->
+                <div class="hidden md:flex items-center space-x-4 text-gray-600">
                   <a href="#" class="hover:text-orange-500">
                     <!-- Facebook -->
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -67,7 +45,7 @@
                     </svg>
                   </a>
                   <a href="#" class="hover:text-orange-500">
-                    <!-- X (Twitter) -->
+                    <!-- X -->
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M18.9 2H22l-7.6 8.7L22.8 22h-6.7l-5.3-7-6 7H2l8.1-9.4L1.5 2h6.9l4.8 6.3L18.9 2z"/>
                     </svg>
@@ -82,10 +60,14 @@
 
                 <!-- Mobile menu button -->
                 <div class="md:hidden">
-                  <button class="text-gray-600 hover:text-gray-900 focus:outline-none">
-                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M4 6h16M4 12h16M4 18h16"/>
+                  <button id="menu-btn" class="text-gray-600 hover:text-gray-900 focus:outline-none">
+                    <!-- Hamburger -->
+                    <svg id="menu-open" class="h-6 w-6 block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                    <!-- Close (X) -->
+                    <svg id="menu-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
                     </svg>
                   </button>
                 </div>
@@ -93,21 +75,24 @@
             </div>
 
             <!-- Mobile menu -->
-            <div class="md:hidden border-t border-gray-200">
+            <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200">
               <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="index.html" class="font-bold text-orange-500 bg-orange-100/60 block px-3 py-2 rounded-md">Home</a>
-                <a href="services.html" class="text-gray-600 hover:text-orange-500 hover:bg-orange-50 block px-3 py-2 rounded-md">Services</a>
-                <a href="destinations.html" class="text-gray-600 hover:text-orange-500 hover:bg-orange-50 block px-3 py-2 rounded-md">Destinations</a>
-                <a href="about.html" class="text-gray-600 hover:text-orange-500 hover:bg-orange-50 block px-3 py-2 rounded-md">About</a>
-                <a href="gallery.html" class="text-gray-600 hover:text-orange-500 hover:bg-orange-50 block px-3 py-2 rounded-md">Gallery</a>
-                <a href="contact.html" class="text-gray-600 hover:text-orange-500 hover:bg-orange-50 block px-3 py-2 rounded-md">Contact</a>
+                  <a href="index.html" class="block px-3 py-2 rounded-md font-bold text-orange-500 bg-orange-100/60">Home</a>
+                  <a href="services.html" class="block px-3 py-2 rounded-md text-gray-600 hover:text-orange-500 hover:bg-orange-50">Services</a>
+                  <a href="destinations.html" class="block px-3 py-2 rounded-md text-gray-600 hover:text-orange-500 hover:bg-orange-50">Destinations</a>
+                  <a href="about.html" class="block px-3 py-2 rounded-md text-gray-600 hover:text-orange-500 hover:bg-orange-50">About</a>
+                  <a href="contact.html" class="block px-3 py-2 rounded-md text-gray-600 hover:text-orange-500 hover:bg-orange-50">Contact</a>
+              </div>
+              <!-- Social icons (mobile) -->
+              <div class="flex justify-center space-x-6 py-3 text-gray-600">
+                <a href="#" class="hover:text-orange-500"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-orange-500"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-orange-500"><i class="fab fa-x-twitter"></i></a>
+                <a href="#" class="hover:text-orange-500"><i class="fab fa-tiktok"></i></a>
               </div>
             </div>
-          </header>
-
-
-
-                <!-- Header -->
+        </header>
+    <!-- Header -->
 
                 <!-- Hero Section -->
                 <section
@@ -190,7 +175,7 @@
                 <!-- WhatsApp Button -->
                 <div class="fixed bottom-6 right-6 z-50">
                     <a
-                        href="https://wa.me/1234567890"
+                        href="https://wa.me/+255674633699"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110"
@@ -627,7 +612,7 @@
                                 <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
                                 <ul class="space-y-4">
                                     <li>
-                                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                                        <a href="index.html" class="text-gray-400 hover:text-white transition-colors duration-200">
                                             Home
                                         </a>
                                     </li>
@@ -637,12 +622,12 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                                        <a href="destinations.html" class="text-gray-400 hover:text-white transition-colors duration-200">
                                             Destinations
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                                        <a href="about.html" class="text-gray-400 hover:text-white transition-colors duration-200">
                                             About
                                         </a>
                                     </li>
@@ -704,5 +689,6 @@
                 </footer>
             </body>
         </html>
+        <script src="scripts.js"></script>
     </body>
 </html>
